@@ -7,6 +7,51 @@ body {
   font-family: "Nunito", sans-serif, Arial, Helvetica, sans-serif;
 }
 
+p{
+  margin:0;
+  padding:0
+}
+/* Header */
+
+header{
+  padding: 10px 30px;
+  display:flex;
+  justify-content: flex-end; 
+}
+
+.authentication{
+  display:flex; 
+}
+
+.btn-wrapper button{
+  margin-left: 0.6em;
+  background: #0077C5;
+  border-radius: 4px;
+  border: 1px solid #4c4c4c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  width: 6.25em;
+  height: 2.3em;
+}
+.text{
+  text-align: center
+}
+
+.text p{
+  font-size: 0.8em;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 20px;
+}
+.text a{
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #0077C5;
+}
+
+
+/* Form */
 .form-wrapper {
   max-width: 370px;
   margin: 0 auto;
@@ -18,13 +63,11 @@ fieldset {
   padding: 30px;
 }
 
-/* ?? */
-
 .form-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 
 .form-header h4 {
@@ -33,6 +76,14 @@ fieldset {
   line-height: 1.1;
   font-size: 1.5em;
   color: #4c4c4c;
+}
+
+.p-container{
+  margin-top: 1.2em;
+}
+
+.account-mobile{
+  display:none;
 }
 
 .form-header p {
@@ -75,12 +126,15 @@ fieldset {
   color: #444444;
 }
 
+.lock_image{
+  display:flex;
+}
+
 .lock_image .fa {
-  position: absolute;
-  right: 37%;
-  bottom: 13.7%;
-  font-size: 1.3em;
+  position: relative;
   color: #c1c5c8;
+  margin-left: -1.2em;
+  margin-top: 0.4em;
 }
 
 .sign-in-form button {
@@ -120,8 +174,55 @@ form {
   font-weight: 400;
   font-size: 0.7em;
   color: #0077c5;
+  
 }
 
 span {
   cursor: pointer;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
+
+/* footer */
+
+footer{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  padding: 1.5em;
+  color: #505050;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align:center;
+}
+ul{
+  display:flex;
+  margin:0;
+}
+
+li{
+  list-style-type: none;  
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+@media only screen and (max-width:480px) {
+  header{
+    display:none;
+  }
+  .account-mobile{
+    display:block;
+  }  
+
+  .lock_image{
+    display:flex;
+  }
+  
+  .lock_image .fa {
+    position: relative;
+    color: #c1c5c8;
+    margin-left: -1.2em;
+    margin-top: 0.4em;
+  }
 }
