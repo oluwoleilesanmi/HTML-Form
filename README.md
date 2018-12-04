@@ -1,7 +1,13 @@
 # HTML-Form
 
-The assignment consisted in cloning the intuit website sign-in form.
-The project was done using the pair programming methodology and with plain css and html.
+Description: Clone of the intuit sign-up page.
 
-Assignment link : https://www.theodinproject.com/courses/html5-and-css3/lessons/html-forms
+Project was developed using the pair programming.
+Project was programmed in plain css and html.
+Project clone is responsive to different screen sizes.
 
+Link to Intuit sign-up page: https://mint.intuit.com/login.event?task=S
+
+Link to project details: https://www.theodinproject.com/courses/html5-and-css3/lessons/html-forms
+
+kindly fork, try this project out as you see fit.
